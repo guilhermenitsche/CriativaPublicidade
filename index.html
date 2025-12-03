@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criativa - Agência de Publicidade</title>
+    
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== CABEÇALHO FIXO ===== -->
+    <header>
+        <nav>
+            <!-- Logo da agência -->
+            <div class="logo">Criativa</div>
+            
+            <!-- Menu de navegação -->
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#atendimento">Atendimento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== SEÇÃO HERO - BANNER PRINCIPAL ===== -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Transforme Ideias em Resultados</h1>
+            <p>Somos especialistas em criar campanhas que conectam marcas a pessoas de forma autêntica e impactante.</p>
+            <!-- Botão que leva para seção de atendimento -->
+            <a href="#atendimento" class="cta-button">Verificar Atendimento</a>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO DE SERVIÇOS ===== -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Branding</h3>
+                    <p>Criação de identidade visual completa para fortalecer sua marca no mercado.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Marketing Digital</h3>
+                    <p>Estratégias integradas para aumentar sua presença online e gerar resultados.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎬</div>
+                    <h3>Produção Audiovisual</h3>
+                    <p>Vídeos e conteúdos que contam histórias e engajam seu público.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Análise de Dados</h3>
+                    <p>Insights estratégicos baseados em dados para otimizar suas campanhas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO DE VERIFICAÇÃO DE CEP ===== -->
+    <section class="cep-check" id="atendimento">
+        <div class="container">
+            <h2 class="section-title">Verificar Área de Atendimento</h2>
+            
+            <div class="cep-container">
+                <p style="text-align: center; margin-bottom: 2rem; color: var(--gray);">
+                    Atualmente atendemos todo o estado de São Paulo. Informe seu CEP para verificar:
+                </p>
+                
+                <div class="cep-input-group">
+                    <!-- Campo para digitar o CEP -->
+                    <input 
+                        type="text" 
+                        class="cep-input" 
+                        id="cepInput" 
+                        placeholder="Digite seu CEP (ex: 01310-100)"
+                        maxlength="9"
+                    >
+                    <!-- Botão para verificar (função checkCEP será chamada pelo JS) -->
+                    <button class="check-button" id="checkButton">Verificar</button>
+                </div>
+                
+                <!-- Div onde o resultado da consulta será exibido -->
+                <div class="result" id="result"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Criativa Agência de Publicidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
